@@ -10,7 +10,6 @@ class WelcomePageController < ApplicationController
     
   def welcome
   #enable :sessions
-    request = AlexaRubykit.build_request(request_json)
     request_json = JSON.parse(request.body.read.to_s)
     raise request_json.inspect
   end
