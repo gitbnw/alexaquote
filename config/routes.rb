@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome_page/welcome'
-  put '/' => 'welcome_page#welcome'
+  post '/' => 'welcome_page#welcome'
   root 'welcome_page#welcome'
   
   
