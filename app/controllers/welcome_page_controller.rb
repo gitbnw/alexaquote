@@ -12,7 +12,7 @@ class WelcomePageController < ApplicationController
   def welcome
   #enable :sessions
     request_json = JSON.parse(request.body.read.to_s)
-    raise request_json.inspect
+    puts request_json
   end
 
 end
